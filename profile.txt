@@ -1,0 +1,90 @@
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const profile = () => {
+  return (
+    <View style={styles.container}>
+      <View style={styles.body}>
+        <View style={styles.avatarContainer}>
+          <Text style={styles.avatar}>DP</Text>
+        </View>
+        <View style={styles.nameContainer}>
+          <Text style={styles.name}>Your Name</Text>
+        </View>
+        <View style={styles.infoContainer}>
+          <Text style={styles.infoLabel}>DOB</Text>
+          <Text style={styles.infoText}>dd/mm/yyyy</Text>
+        </View>
+        <View style={styles.infoContainer}>
+          <Text style={styles.infoLabel}>Email</Text>
+          <Text style={styles.infoText}>your@email.com</Text>
+        </View>
+        <View style={styles.infoContainer}>
+          <Text style={styles.infoLabel}>Password</Text>
+          <Text style={styles.infoText}>Passowrd</Text>
+        </View>
+        <View style={styles.infoContainer}>
+          <Text style={styles.infoLabel}>Update Profile</Text>
+          <Text style={styles.infoText}>update profile</Text>
+        </View>
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#ECF0F3',
+  },
+  body: {
+    marginTop:120,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  avatarContainer: {
+    width: 140,
+    height: 140,
+    borderRadius: 70,
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowRadius: 6,
+    shadowOpacity: 0.16,
+  },
+  avatar: {
+    fontSize: 72,
+    fontWeight: '700',
+  },
+  nameContainer: {
+    marginTop: 24,
+    alignItems: 'center',
+  },
+  name: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  infoContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 12,
+  },
+  infoLabel: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#666666',
+    marginRight: 8,
+  },
+  infoText: {
+    fontSize: 16,
+  },
+});
+
+export default profile;
+
+                      
